@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1555262629 source:c:\users\john\documents\codeblocks\lab2\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+
