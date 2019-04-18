@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555593798 source:c:\users\hp\documents\lab5\main.cpp
+	<iostream>
+	<conio.h>
+	<math.h>
+
