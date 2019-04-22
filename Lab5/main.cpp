@@ -23,22 +23,22 @@ class Point
 typedef double (*fun)(double x);
 double f1(double x){return sin(x);}
 double f2(double x){return cos(x);}
-fun fc[]={f1,f2};//массив функций которые мы будем табулировать
+fun fc[]={f1,f2};//massiv funkcii kotorii mi budem tabilurovat
 
 class Baza_tab
 {
     double a,b;
     int n;
-    Point* p;//массив точек табулированной функции
-    Point* p_in;//массив интервалов, по оси x, где x начало интервала, y конец интервала
-    int kol_in;//количество интервалов
+    Point* p;//massiv tochek tabulirovannoi funkcii
+    Point* p_in;//massiv intervalov po osi x, gde x nachalo intervala,y konecintervala
+    int kol_in;//kolichestvo intervalov
     public:
     int get_n(){return n;}
     int get_kol_in(){return kol_in;}
     double get_a(){return a;}
     double get_b(){return b;}
 
-    Point* tabul(fun f)//метод табул€ции, возвращает массив точек входной функции
+    Point* tabul(fun f)//metod tabulyacii, vosvrachaet massiv tochek vhodnoi funckii
     {
         double x,h,y; int i;
         for(i=0,h=(b-a)/n,x=a;i<n;i++)
@@ -53,7 +53,7 @@ class Baza_tab
     Point* interval_nul()
     {
         int i,j;
-        Point* dt;//временный массив, т.к. нам не надо так много места, выходной массив будет меньше
+        Point* dt;//vremenni massiv t.k nam ne nado stolko mesta
         dt = new Point[n];
         for(i=0,j=0;i<n-2;i++)
             if(p[i].get_y()*p[i+1].get_y()<0)
@@ -76,7 +76,7 @@ class Baza_tab
     }
 
     Baza_tab(){a=0;b=0;n=0;kol_in=0;}
-    Baza_tab(double av=0,double bv=0,int nv=0)
+    Baza_tab(double av,double bv,int nv)
     {
         a=av;
         b=bv;
@@ -90,8 +90,8 @@ class Baza_tab
 
 int main()
 {
-    Point* p;//дл€
-    Point* tw; //tw дл€ табул€ции
+    Point* p;//dla lokalnih ekstremumov
+    Point* tw; //tw dla tabulacii
     double a(0),b(10);
     int i,j,n(20),m(2);
 
