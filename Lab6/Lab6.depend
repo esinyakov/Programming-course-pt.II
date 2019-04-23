@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555959423 source:c:\users\sinya\documents\programming-course-pt.ii-master\lab6\main.cpp
+	<iostream>
+	<conio.h>
+	<math.h>
+
