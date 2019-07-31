@@ -1,0 +1,6 @@
+﻿  Lab9.cpp
+c:\users\sinya\documents\programming-course-pt.ii-master\lab9\lab9\lab9.cpp(87): warning C4101: 'k': unreferenced local variable
+c:\users\sinya\documents\programming-course-pt.ii-master\lab9\lab9\lab9.cpp(185): warning C4101: 'a': unreferenced local variable
+c:\users\sinya\documents\programming-course-pt.ii-master\lab9\lab9\lab9.cpp(185): warning C4101: 'b': unreferenced local variable
+c:\users\sinya\documents\programming-course-pt.ii-master\lab9\lab9\lab9.cpp(105): warning C4715: 'Array::operator[]': not all control paths return a value
+  Lab9.vcxproj -> C:\Users\sinya\Documents\Programming-course-pt.II-master\Lab9\Debug\Lab9.exe
